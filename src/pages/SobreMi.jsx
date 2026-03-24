@@ -75,6 +75,8 @@ function SobreMi() {
           <div className="border-t border-gray-700 w-full pt-4">
             <a
               href={SOCIAL_LINKS.email}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-3 hover:text-purple-500 transition-colors"
             >
               <FaEnvelope /> <span>jrcas027@gmail.com</span>

@@ -2,7 +2,7 @@
 export const SOCIAL_LINKS = {
   github: "https://github.com/LuisSanchez851",
   linkedin: "https://www.linkedin.com/in/luis-s%C3%A1nchez-c-936b901b8/",
-  email: "mailto:jrcas027@gmail.com",
+  email: "https://mail.google.com/mail/?view=cm&fs=1&to=jrcas027@gmail.com",
 };
 
 // ─── Tecnologías ───

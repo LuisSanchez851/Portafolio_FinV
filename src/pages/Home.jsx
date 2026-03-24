@@ -56,6 +56,8 @@ function Home() {
           </a>
           <a
             href={SOCIAL_LINKS.email}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-purple-400 transition-colors"
           >
             <FaEnvelope />
