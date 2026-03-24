@@ -217,24 +217,38 @@ function Home() {
         <h3 className="text-3xl md:text-4xl font-extrabold text-purple-500 mb-10 text-center">
           Contacto
         </h3>
-        <form className="mt-6 space-y-4 max-w-xl mx-auto">
+        <form
+          action="https://formsubmit.co/jrcas027@gmail.com"
+          method="POST"
+          className="mt-6 space-y-4 max-w-xl mx-auto"
+        >
+          {/* Configuración adicional de FormSubmit */}
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde mi portafolio!" />
+          <input type="hidden" name="_template" value="box" />
+
           <input
             type="text"
+            name="name"
             placeholder="Nombre"
-            className="w-full p-2 rounded bg-gray-700 text-white"
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
           />
           <input
             type="email"
+            name="email"
             placeholder="Correo"
-            className="w-full p-2 rounded bg-gray-700 text-white"
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
           />
           <textarea
+            name="message"
             placeholder="Mensaje"
-            className="w-full p-2 rounded bg-gray-700 text-white h-32"
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white h-32 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
           />
           <button
             type="submit"
-            className="bg-purple-600 px-4 py-2 rounded text-white hover:bg-purple-700 transition"
+            className="bg-purple-600 px-4 py-2 rounded text-white hover:bg-purple-700 transition w-full md:w-auto"
           >
             Enviar
           </button>
