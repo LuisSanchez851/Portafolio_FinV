@@ -77,7 +77,7 @@ function SobreMi() {
               href={SOCIAL_LINKS.email}
               className="flex items-center gap-3 hover:text-purple-500 transition-colors"
             >
-              <FaEnvelope /> <span>luisdev@example.com</span>
+              <FaEnvelope /> <span>jrcas027@gmail.com</span>
             </a>
           </div>
         </div>
