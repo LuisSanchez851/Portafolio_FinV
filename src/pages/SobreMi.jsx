@@ -21,27 +21,23 @@ function SobreMi() {
           </h1>
 
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-            Siempre me ha apasionado entender cómo funcionan las cosas. Escribí
-            mi primer programa a los 8 años, mientras experimentaba con una
-            vieja computadora que había en casa. Desde ese momento supe que la
-            tecnología sería parte de mi vida.
+            Desde los 15 años empecé a interesarme por la tecnología mientras estudiaba un técnico en mecatrónica, donde tuve mi primer contacto con la programación trabajando con microcontroladores como Arduino, sensores y sistemas automatizados. Esa experiencia despertó en mí el interés por entender no solo cómo funcionan los sistemas físicos, sino también cómo el software puede potenciarlos.
           </p>
 
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-            Me encanta crear soluciones que impacten, desde aplicaciones web
-            robustas hasta bases de datos escalables, backend eficientes y
-            experiencias visuales atractivas.
+            A partir de ahí decidí enfocarme en la Ingeniería de Software, formándome de manera constante y desarrollando proyectos donde combino lógica, diseño y resolución de problemas.
           </p>
 
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-            Actualmente trabajo como desarrollador fullstack, combinando
-            proyectos freelance con formación continua en áreas como
-            arquitectura de software, cloud computing y diseño de interfaces.
+            Me interesa crear herramientas y soluciones que tengan un impacto real, especialmente en el desarrollo web, el backend y la gestión de datos, buscando siempre que sean eficientes, escalables y útiles en contextos reales.
+          </p>
+
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
+            Actualmente sigo fortaleciendo mis habilidades como desarrollador fullstack, explorando tecnologías modernas y profundizando en áreas como arquitectura de software y desarrollo de aplicaciones.
           </p>
 
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Fuera del código, me apasiona aprender sobre innovación, leer sobre
-            tecnología, jugar videojuegos y compartir conocimiento.
+            Fuera del ámbito técnico, me interesa aprender sobre innovación, tecnología y nuevas tendencias, además de disfrutar los videojuegos y el aprendizaje continuo.
           </p>
         </div>
 
