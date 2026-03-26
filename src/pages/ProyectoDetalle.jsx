@@ -25,14 +25,17 @@ function ProyectoDetalle() {
   }
 
   return (
-    <article className="max-w-3xl mx-auto mb-16">
-      <header className="mb-10">
-        <h1 className="text-4xl md:text-5xl font-extrabold mt-4 text-center">
+    <article className="max-w-3xl mx-auto mb-16 px-4">
+      {/* HEADER */}
+      <header className="mb-10 text-center">
+        <h1 className="text-4xl md:text-5xl font-extrabold mt-4">
           {proyecto.titulo}
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400 mt-4 text-center">
+
+        <p className="text-lg text-gray-600 dark:text-gray-400 mt-4">
           {proyecto.subtitulo}
         </p>
+
         <img
           src={proyecto.imagen}
           alt={proyecto.titulo}
@@ -40,29 +43,76 @@ function ProyectoDetalle() {
         />
       </header>
 
-      <div className="prose prose-lg dark:prose-invert max-w-none text-center">
-        {proyecto.contenido.map((bloque, idx) => {
-          switch (bloque.tipo) {
-            case "titulo":
-              return <h2 key={idx}>{bloque.texto}</h2>;
-            case "parrafo":
-              return <p key={idx}>{bloque.texto}</p>;
-            case "lista":
-              return (
-                <ul key={idx}>
-                  {bloque.items.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              );
-            case "cita":
-              return <blockquote key={idx}>{bloque.texto}</blockquote>;
-            default:
-              return null;
-          }
-        })}
+      {/* CONTENIDO DINÁMICO */}
+      {/* RESUMEN */}
+      <p className="text-lg text-gray-300 mt-6">
+        {proyecto.resumen}
+      </p>
+
+      {/* INFO */}
+      <div className="flex flex-wrap gap-4 mt-6 text-sm text-gray-400">
+        <span>👨‍💻 {proyecto.rol}</span>
+        <span>🏢 {proyecto.empresa}</span>
       </div>
 
+      {/* STACK */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold mb-3">Tecnologías</h3>
+        <div className="flex flex-wrap gap-2">
+          {proyecto.stack.map((tech, i) => (
+            <span
+              key={i}
+              className="px-3 py-1 bg-purple-600/20 text-purple-400 rounded-full text-xs"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* PROCESO */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold mb-3">Proceso</h3>
+        <ul className="list-disc ml-5">
+          {proyecto.proceso.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* RETOS */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold mb-3">Retos</h3>
+        <ul className="list-disc ml-5">
+          {proyecto.retos.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* SOLUCIÓN */}
+      <div className="mt-8">
+        <h3 className="text-xl font-bold mb-3">Solución</h3>
+        <ul className="list-disc ml-5">
+          {proyecto.solucion.map((item, i) => (
+            <li key={i}>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* IMPACTO */}
+      <div className="mt-10 bg-purple-600/10 p-6 rounded-xl">
+        <h3 className="text-xl font-bold text-purple-400 mb-3">
+          Impacto
+        </h3>
+        <ul>
+          {proyecto.impacto.map((item, i) => (
+            <li key={i}>🚀 {item}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* BOTÓN */}
       <div className="text-center mt-10">
         <Link
           to="/proyectos"

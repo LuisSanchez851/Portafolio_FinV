@@ -23,7 +23,7 @@ function Home() {
         </div>
 
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mt-6">
-          <span className="text-purple-500">Software developer,</span>
+          <span className="text-purple-500">Software developer</span>,
           <br className="hidden md:block" />
           founder, and tech enthusiast.
         </h1>

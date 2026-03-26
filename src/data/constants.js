@@ -19,6 +19,14 @@ export const TECHNOLOGIES = [
 
 // ─── Proyectos destacados (home) ───
 export const FEATURED_PROJECTS = [
+    {
+    slug: "automatizaciones-procesos",
+    titulo: "Automatizaciones y procesos",
+    anio: "2026",
+    descripcion:
+      "Diseño e implementación de soluciones de automatización para optimizar procesos operativos y administrativos. Automatización de tareas repetitivas, integración de sistemas y desarrollo de herramientas personalizadas para mejorar la eficiencia operativa.",
+    imagen: "/assets/img/ImagenRefeKoyag.png",
+  },
   {
     slug: "base-datos-completa",
     titulo: "Base de datos completa",
@@ -34,15 +42,7 @@ export const FEATURED_PROJECTS = [
     descripcion:
       "Descubrimiento de herramientas necesarias para el entorno de plataformas, investigación de requisitos, proceso de integración, pruebas en entornos de pruebas, simulando entornos productivos, documentación del proceso y resultados.",
     imagen: "/assets/img/ImagenRefeKoyag.png",
-  },
-  {
-    slug: "automatizaciones-procesos",
-    titulo: "Automatizaciones y procesos",
-    anio: "2026",
-    descripcion:
-      "Diseño e implementación de soluciones de automatización para optimizar procesos operativos y administrativos. Automatización de tareas repetitivas, integración de sistemas y desarrollo de herramientas personalizadas para mejorar la eficiencia operativa.",
-    imagen: "/assets/img/ImagenRefeKoyag.png",
-  },
+  }
 ];
 
 // ─── Todos los proyectos (página proyectos) ───
@@ -205,112 +205,144 @@ export const BLOG_POSTS = [
 
 // ─── Detalle de proyectos (para páginas individuales) ───
 export const PROJECT_DETAILS = {
+    "automatizaciones-procesos": {
+    titulo: "Optimización de órdenes de trabajo con IA",
+    subtitulo: "Uso de OR-Tools y CP-SAT para planificación inteligente",
+
+    imagen: "/assets/img/ImagenRefeKoyag.png",
+
+    resumen:
+      "Desarrollo de agentes inteligentes para la priorización y planificación de órdenes de trabajo en MASSY ENERGY.",
+
+    rol: "Desarrollador de automatización",
+
+    empresa: "MASSY ENERGY Colombia",
+
+    stack: [
+      "Python",
+      "OR-Tools",
+      "CP-SAT",
+      "Optimización matemática",
+    ],
+
+    proceso: [
+      "Definición de restricciones del sistema",
+      "Modelado del problema",
+      "Implementación con OR-Tools",
+      "Generación de cronogramas optimizados",
+    ],
+
+    retos: [
+      "Múltiples restricciones (horarios, criticidad)",
+      "Optimización de recursos",
+      "Complejidad del modelo matemático",
+    ],
+
+    solucion: [
+      "Uso de CP-SAT solver",
+      "Modelado de restricciones",
+      "Optimización automatizada",
+    ],
+
+    impacto: [
+      "Optimización del uso de recursos",
+      "Reducción de tiempos de planificación",
+      "Mejora en toma de decisiones",
+    ],
+  },
   "base-datos-completa": {
-    titulo: "Creación de base de datos desde cero",
-    subtitulo:
-      "Una guía completa para construir un portafolio profesional que te ayude a destacar en el mundo del desarrollo.",
+    titulo: "Sistema de gestión de empleados",
+    subtitulo: "Centralización de información para el área de Recursos Humanos",
+
     imagen: "/assets/img/imagen.jpeg",
-    contenido: [
-      {
-        tipo: "parrafo",
-        texto:
-          "Un portafolio no es solo una galería de proyectos, sino una forma de contar quién eres como profesional. Aquí te comparto algunos puntos clave:",
-      },
-      { tipo: "titulo", texto: "1. Introducción Personal" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Comienza hablando de quién eres, tus intereses, tu motivación por aprender y qué te llevó al mundo del desarrollo.",
-      },
-      { tipo: "titulo", texto: "2. Muestra tus proyectos" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Elige entre 3 y 6 proyectos que reflejen tus habilidades. Para cada uno incluye:",
-      },
-      {
-        tipo: "lista",
-        items: [
-          "Captura o video del proyecto",
-          "Descripción breve",
-          "Retos enfrentados y soluciones",
-          "Stack tecnológico",
-          "Enlace a GitHub o demo",
-        ],
-      },
-      { tipo: "titulo", texto: "3. Destaca tus habilidades" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Puedes incluir una sección de habilidades con logos, gráficos o simplemente texto sobre tecnologías que dominas.",
-      },
-      { tipo: "titulo", texto: "4. Información de contacto" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Facilita que te contacten. Incluye tus redes, correo o un formulario.",
-      },
-      {
-        tipo: "cita",
-        texto:
-          "👉 Recuerda: Un portafolio es un proyecto vivo. Actualízalo constantemente.",
-      },
-      { tipo: "parrafo", texto: "Espero que esta guía te sea de utilidad 🚀." },
+
+    resumen:
+      "Desarrollé una solución completa para centralizar la información de empleados en la empresa Brandstrat, eliminando procesos manuales y mejorando la gestión del área de Recursos Humanos.",
+
+    rol: "Desarrollador Fullstack",
+
+    empresa: "Brandstrat",
+
+    stack: [
+      "MySQL",
+      "Node.js",
+      "Express",
+      "React",
+      "Tailwind",
+      "Bootstrap",
+    ],
+
+    proceso: [
+      "Levantamiento de requerimientos con el área de RH",
+      "Diseño de base de datos (MER y normalización)",
+      "Implementación en MySQL",
+      "Desarrollo de API REST",
+      "Construcción de frontend interactivo",
+    ],
+
+    retos: [
+      "Datos no centralizados",
+      "Falta de estructura en la información",
+      "Necesidad de escalabilidad",
+    ],
+
+    solucion: [
+      "Diseño de modelo relacional optimizado",
+      "Arquitectura limpia en backend",
+      "Interfaz intuitiva para gestión de empleados",
+    ],
+
+    impacto: [
+      "Centralización completa de la información",
+      "Reducción de errores manuales",
+      "Mejora en la eficiencia del área de RH",
     ],
   },
   "tester-integracion": {
-    titulo: "Tester e Integraciones a sistemas",
-    subtitulo:
-      "Una guía completa para construir un portafolio profesional que te ayude a destacar en el mundo del desarrollo.",
+    titulo: "Testing e integración de sistemas",
+    subtitulo: "Validación de soluciones e integración de APIs en Koyag",
+
     imagen: "/assets/img/ImagenRefeKoyag.png",
-    contenido: [
-      {
-        tipo: "parrafo",
-        texto:
-          "Un portafolio no es solo una galería de proyectos, sino una forma de contar quién eres como profesional. Aquí te comparto algunos puntos clave:",
-      },
-      { tipo: "titulo", texto: "1. Introducción Personal" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Comienza hablando de quién eres, tus intereses, tu motivación por aprender y qué te llevó al mundo del desarrollo.",
-      },
-      { tipo: "titulo", texto: "2. Muestra tus proyectos" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Elige entre 3 y 6 proyectos que reflejen tus habilidades. Para cada uno incluye:",
-      },
-      {
-        tipo: "lista",
-        items: [
-          "Captura o video del proyecto",
-          "Descripción breve",
-          "Retos enfrentados y soluciones",
-          "Stack tecnológico",
-          "Enlace a GitHub o demo",
-        ],
-      },
-      { tipo: "titulo", texto: "3. Destaca tus habilidades" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Puedes incluir una sección de habilidades con logos, gráficos o simplemente texto sobre tecnologías que dominas.",
-      },
-      { tipo: "titulo", texto: "4. Información de contacto" },
-      {
-        tipo: "parrafo",
-        texto:
-          "Facilita que te contacten. Incluye tus redes, correo o un formulario.",
-      },
-      {
-        tipo: "cita",
-        texto:
-          "👉 Recuerda: Un portafolio es un proyecto vivo. Actualízalo constantemente.",
-      },
-      { tipo: "parrafo", texto: "Espero que esta guía te sea de utilidad 🚀." },
+
+    resumen:
+      "Participé en pruebas funcionales e integración de nuevas tecnologías dentro del ecosistema de Koyag.",
+
+    rol: "QA / Integraciones",
+
+    empresa: "Koyag",
+
+    stack: [
+      "Postman",
+      "APIs REST",
+      "WhatsApp API",
+      "Microsoft Services",
     ],
-  },
+
+    proceso: [
+      "Pruebas en entornos de staging",
+      "Validación de nuevas integraciones",
+      "Simulación de escenarios reales",
+      "Documentación técnica",
+    ],
+
+    retos: [
+      "Integración con APIs externas",
+      "Falta de documentación",
+      "Validación en entornos simulados",
+    ],
+
+    solucion: [
+      "Uso de Postman para pruebas",
+      "Implementación de pruebas controladas",
+      "Documentación de endpoints",
+    ],
+
+    impacto: [
+      "Integración de WhatsApp para notificaciones",
+      "Captación de leads desde la plataforma",
+      "Validación de nuevas tecnologías",
+    ],
+  }
 };
 
 // ─── Detalle de blog posts (para páginas individuales) ───
